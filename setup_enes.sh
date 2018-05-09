@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Setting up a Downloads folder if it doesn't already exist.
+mkdir -p ~/Downloads
+
 # Library links.
 OPENCV_LINK="https://github.com/opencv/opencv/archive/3.4.1.zip"
 ARUCO_LINK="https://downloads.sourceforge.net/project/aruco/3.0.0/aruco-3.0.9.zip"
@@ -38,3 +41,6 @@ apt-get install libglu1-mesa-dev -y
 
 # Installing nginx
 apt-get install nginx
+
+apt-get update
+apt-get upgrade

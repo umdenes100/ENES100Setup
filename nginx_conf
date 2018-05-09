@@ -1,0 +1,13 @@
+server {
+	listen 8000;
+	server_name VisionSystemRemoteClient;
+
+	access_log /Users/enes100/Development/VisionSystemRemoteClient/logs/access.log;
+	error_log /Users/enes100/Development/VisionSystemRemoteClient/logs/error.log;
+
+location / {
+	root /Users/enes100/Development/VisionSystemRemoteClient/;
+	index index.html;
+}
+
+}
