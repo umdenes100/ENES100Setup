@@ -42,5 +42,5 @@ apt-get install libglu1-mesa-dev -y
 # Installing nginx
 apt-get install nginx
 
-apt-get update
-apt-get upgrade
+# Adding enes100 user to USB access group.
+moduser -a -G dialout enes100
