@@ -32,7 +32,7 @@ cd aruco-3.0.9 && mkdir build && cd build && cmake .. && make install
 # Installing QT5
 cd ~/Downloads
 wget $QT_LINK
-chmod +x qt-opensource-linux-x64-5.7.0.run && ./qt-opensource-linux-x64-5.7.0.run
+chmod +x qt-opensource-linux-x64-5.11.0.run && ./qt-opensource-linux-x64-5.11.0.run
 
 # Installing QT Add-Ons
 apt install libfontconfig1
