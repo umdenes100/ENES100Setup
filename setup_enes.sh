@@ -6,7 +6,7 @@ mkdir -p ~/Downloads
 # Library links.
 OPENCV_LINK="https://github.com/opencv/opencv/archive/3.4.1.zip"
 ARUCO_LINK="https://downloads.sourceforge.net/project/aruco/3.0.0/aruco-3.0.9.zip"
-QT_LINK="http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-linux-x64-5.7.0.run"
+QT_LINK="http://download.qt.io/official_releases/qt/5.11/5.11.0/qt-opensource-linux-x64-5.11.0.run"
 
 # General updates.
 apt update
