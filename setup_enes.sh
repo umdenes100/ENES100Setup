@@ -40,4 +40,4 @@ apt install mesa-common-dev -y
 apt install libglu1-mesa-dev -y
 
 # Adding enes100 user to USB access group.
-moduser -a -G dialout enes100
+usermod -a -G dialout enes100
