@@ -38,6 +38,7 @@ chmod +x qt-opensource-linux-x64-5.11.0.run && ./qt-opensource-linux-x64-5.11.0.
 apt install libfontconfig1
 apt install mesa-common-dev -y
 apt install libglu1-mesa-dev -y
+apt install libcanberra-gtk-module:i386
 
 # Adding enes100 user to USB access group.
 usermod -a -G dialout enes100
