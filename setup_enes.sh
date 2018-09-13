@@ -39,6 +39,7 @@ apt install libfontconfig1
 apt install mesa-common-dev -y
 apt install libglu1-mesa-dev -y
 apt install libcanberra-gtk-module
+apt install --no-install-recommends gnome-panel
 
 # Adding enes100 user to USB access group.
 usermod -a -G dialout enes100
