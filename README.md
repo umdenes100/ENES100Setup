@@ -9,7 +9,7 @@ Ubuntu 18.04 LTS
 ```
 cd ~/Downloads && git clone https://github.com/umdenes100/ENES100Setup.git && cd ENES100Setup
 
-chmod +rwx setup_enes.sh
+chmod +x setup_enes.sh
 
 sudo ./setup_enes.sh
 ```
