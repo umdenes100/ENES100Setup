@@ -13,9 +13,9 @@ apt update
 apt upgrade
 
 # Pre-reqs
-apt install build-essential
-apt install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
-apt install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+apt install build-essential -y
+apt install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev -y
+apt install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev -y
 
 apt install unzip
 
@@ -35,11 +35,11 @@ wget $QT_LINK
 chmod +x qt-opensource-linux-x64-5.11.0.run && ./qt-opensource-linux-x64-5.11.0.run
 
 # Installing QT Add-Ons
-apt install libfontconfig1
+apt install libfontconfig1 -y
 apt install mesa-common-dev -y
 apt install libglu1-mesa-dev -y
-apt install libcanberra-gtk-module
-apt install --no-install-recommends gnome-panel
+apt install libcanberra-gtk-module -y
+apt install --no-install-recommends gnome-panel -y
 
 # Adding enes100 user to USB access group.
 usermod -a -G dialout enes100

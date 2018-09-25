@@ -12,9 +12,9 @@ cd ~/Downloads && git clone https://github.com/umdenes100/Enes100Setup.git && cd
 chmod +rwx setup_enes.sh
 chmod +rwx setup_vs.sh
 
-./setup_enes.sh
+sudo ./setup_enes.sh
 
 # Let QT GUI Install.
 
-./setup_vs.sh
+sudo ./setup_vs.sh
 ```
