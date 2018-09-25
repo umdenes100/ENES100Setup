@@ -1,5 +1,10 @@
 #!/bin/bash
 
+apt update
+apt upgrade
+
+# CORE PACKAGES - OPEN_CV, QT, ARUCO
+
 # Setting up a Downloads folder if it doesn't already exist.
 mkdir -p ~/Downloads
 
@@ -7,10 +12,6 @@ mkdir -p ~/Downloads
 OPENCV_LINK="https://github.com/opencv/opencv/archive/3.4.1.zip"
 ARUCO_LINK="https://downloads.sourceforge.net/project/aruco/3.0.0/aruco-3.0.9.zip"
 QT_LINK="http://download.qt.io/official_releases/qt/5.11/5.11.0/qt-opensource-linux-x64-5.11.0.run"
-
-# General updates.
-apt update
-apt upgrade
 
 # Pre-reqs
 apt install build-essential -y
@@ -43,3 +44,24 @@ apt install --no-install-recommends gnome-panel -y
 
 # Adding enes100 user to USB access group.
 usermod -a -G dialout enes100
+
+
+apt update
+apt upgrade
+
+# ENES100 REPOS
+
+# VS -> Vision System
+# VSR -> Vision System Remote
+
+VS_LINK="https://github.com/umdenes100/VisionSystem.git"
+VSR_LINK="https://github.com/umdenes100/VisionSystemRemote.git"
+
+mkdir -p ~/Development && cd ~/Development
+
+# Downloading repos.
+git clone $VS_LINK
+git clone $VSR_LINK
+
+cd ~
+
