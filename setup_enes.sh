@@ -17,7 +17,7 @@ QT_LINK="http://download.qt.io/official_releases/qt/5.11/5.11.0/qt-opensource-li
 apt install build-essential -y
 apt install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev -y
 apt install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev -y
-
+apt install v4l-utils
 apt install unzip
 
 # Installing OpenCV
