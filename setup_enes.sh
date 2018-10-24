@@ -9,7 +9,7 @@ apt upgrade
 mkdir -p ~/Downloads
 
 # Library links.
-OPENCV_LINK="https://github.com/opencv/opencv/archive/3.4.3.zip"
+OPENCV_LINK="https://github.com/opencv/opencv.git"
 OPENCV_CONTRIB_LINK="https://github.com/opencv/opencv_contrib.git"
 QT_LINK="http://download.qt.io/official_releases/qt/5.11/5.11.0/qt-opensource-linux-x64-5.11.0.run"
 
@@ -25,7 +25,7 @@ apt install unzip
 
 # Downloading and Setting Up OpenCV
 cd ~/Downloads
-wget $OPENCV_LINK && unzip 3.4.3.zip && rm 3.4.3.zip
+git clone $OPENCV_LINK && cd opencv && git checkout 3.4
 
 # Downloading and Setting Up OpenCVContrib
 cd ~/Downloads
