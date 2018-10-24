@@ -20,6 +20,7 @@ apt install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev li
 add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
 apt update
 apt install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper1 libjasper-dev libdc1394-22-dev -y
+apt install libgtk-3-dev
 apt install v4l-utils
 apt install unzip
 
