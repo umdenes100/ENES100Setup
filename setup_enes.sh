@@ -9,8 +9,8 @@ apt upgrade
 mkdir -p ~/Downloads
 
 # Library links.
-OPENCV_LINK="https://github.com/opencv/opencv/archive/3.4.1.zip"
-ARUCO_LINK="https://downloads.sourceforge.net/project/aruco/3.0.0/aruco-3.0.9.zip"
+OPENCV_LINK="https://github.com/opencv/opencv/archive/3.4.3.zip"
+OPENCV_CONTRIB_LINK="https://github.com/opencv/opencv_contrib.git"
 QT_LINK="http://download.qt.io/official_releases/qt/5.11/5.11.0/qt-opensource-linux-x64-5.11.0.run"
 
 # Pre-reqs
@@ -20,15 +20,17 @@ apt install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev li
 apt install v4l-utils
 apt install unzip
 
-# Installing OpenCV
+# Downloading and Setting Up OpenCV
 cd ~/Downloads
-wget $OPENCV_LINK && unzip 3.4.1.zip && rm 3.4.1.zip
-cd opencv-3.4.1 && mkdir build && cd build && cmake .. && make install
+wget $OPENCV_LINK && unzip 3.4.3.zip -d opencv && rm 3.4.3.zip
 
-# Installing ArUco
+# Downloading and Setting Up OpenCVContrib
 cd ~/Downloads
-wget $ARUCO_LINK && unzip aruco-3.0.9.zip && rm aruco-3.0.9.zip
-cd aruco-3.0.9 && mkdir build && cd build && cmake .. && make install
+git clone $OPENCV_CONTRIB_LINK && cd opencv_contrib && git checkout 3.4
+
+# Installing OpenCV and OpenCVContrib
+cd ~/Downloads
+cd opencv && mkdir build && cd build && cmake -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules .. && make install
 
 # Installing QT5
 cd ~/Downloads
