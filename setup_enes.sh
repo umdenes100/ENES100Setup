@@ -33,7 +33,7 @@ git clone $OPENCV_CONTRIB_LINK && cd opencv_contrib && git checkout 3.4
 
 # Installing OpenCV and OpenCVContrib
 cd ~/Downloads
-cd opencv-3.4.3 && mkdir build && cd build && cmake -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules .. && make install
+cd opencv && mkdir build && cd build && cmake -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules .. && make install
 
 # Installing QT5
 cd ~/Downloads
