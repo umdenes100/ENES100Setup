@@ -63,9 +63,4 @@ mkdir -p ~/Development && cd ~/Development
 git clone $VS_LINK
 git clone $VSR_LINK
 
-cd ~/Downloads/ENES100Setup
-cp ./resetCamera /bin/resetCamera
-chmod +x /bin/resetCamera
-resetCamera
-
 cd ~
