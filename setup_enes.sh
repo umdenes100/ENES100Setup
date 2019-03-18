@@ -51,16 +51,13 @@ apt upgrade
 
 # ENES100 REPOS
 
-# VS -> Vision System
 # VSR -> Vision System Remote
 
-VS_LINK="https://github.com/umdenes100/VisionSystem.git"
 VSR_LINK="https://github.com/umdenes100/VisionSystemRemote.git"
 
 mkdir -p ~/Development && cd ~/Development
 
 # Downloading repos.
-git clone $VS_LINK
 git clone $VSR_LINK
 
 cd ~
